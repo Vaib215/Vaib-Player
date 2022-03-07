@@ -34,42 +34,36 @@ h1 {
   border-top-right-radius: 10px;
 }
 
+.control {
+  display: flex;
+  width: 60%;
+}
+
 .controls {
   align-items: center;
   background-color: rgba(0, 0, 0, 0.5);
-  border-bottom-right-radius: 10px;
-  border-bottom-left-radius: 10px;
   color: white;
   display: flex;
-  justify-content: center;
+  justify-content: end;
   padding: 0.5em;
-  width: 60%;
+  width: 100%;
 }
 
 .controls button {
   border: 0;
   background: transparent;
   cursor: pointer;
-  margin: 4px;
 }
 
-.controls .fa-play {
-  color: rgb(83, 197, 6);
-}
-
-.controls .fa-pause {
+.controls .fa-pause, #fullscreen{
   color: white;
   margin-right: 2.25px;
-}
-
-.controls .fa-stop {
-  color: rgb(201, 32, 32);
 }
 
 .controls #timestamp {
   color: white;
   margin-left: 10px;
-  width: 10%;
+  width: 4em;
 }
 
 .controls select {
@@ -79,6 +73,14 @@ h1 {
   border-radius: 3px;
   font-size: 14px;
   margin-left: 10px;
+}
+
+.controls select option{
+  color: black;
+}
+
+#volume {
+  width: 30%;
 }
 
 @media (max-width: 800px) {
@@ -91,8 +93,21 @@ h1 {
     font-size: 1.5em;
   }
 
-  .screen,
-  .controls {
+  .control {
+    display: flex;
     width: 90%;
+    flex-direction: column;
+  }
+
+  .screen {
+    width: 90%;
+  }
+
+  .controls {
+    width: 100%;
+  }
+
+  #volume {
+    width: 15%;
   }
 }

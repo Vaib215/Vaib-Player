@@ -2,7 +2,7 @@
 
 input[type='range'] {
 	-webkit-appearance: none; /* Hides the slider so that custom slider can be made */
-	width: 100%; /* Specific width is required for Firefox. */
+	width: 90%; /* Specific width is required for Firefox. */
 	background: transparent; /* Otherwise white in Chrome */
 }
 
@@ -15,7 +15,7 @@ input[type='range']:focus {
 }
 
 input[type='range']::-ms-track {
-	width: 100%;
+	width: 90%;
 	cursor: pointer;
 
 	/* Hides the slider so custom styles can be added */
@@ -28,12 +28,12 @@ input[type='range']::-ms-track {
 input[type='range']::-webkit-slider-thumb {
 	-webkit-appearance: none;
 	border: 1px solid #000000;
-	height: 16px;
+	height: 26px;
 	width: 16px;
 	border-radius: 10px;
 	background: #ffffff;
 	cursor: pointer;
-	margin-top: -14px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
+	margin-top: -10px; /* You need to specify a margin in Chrome, but in Firefox and IE it is automatic */
 	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d; /* Add cool effects to your sliders! */
 }
 
@@ -41,8 +41,8 @@ input[type='range']::-webkit-slider-thumb {
 input[type='range']::-moz-range-thumb {
 	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 	border: 1px solid #000000;
-	height: 16px;
-	width: 16px;
+	height: 26px;
+	width: 6px;
 	border-radius: 10px;
 	background: #ffffff;
 	cursor: pointer;
@@ -52,7 +52,7 @@ input[type='range']::-moz-range-thumb {
 input[type='range']::-ms-thumb {
 	box-shadow: 1px 1px 1px #000000, 0px 0px 1px #0d0d0d;
 	border: 1px solid #000000;
-	height: 16px;
+	height: 26px;
 	width: 16px;
 	border-radius: 10px;
 	background: #ffffff;

@@ -6,27 +6,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Vaib Player</title>
-    <script src="https://kit.fontawesome.com/7373226b9a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="progress.css">
 </head>
 
 <body>
     <h1>Play your favourite video online using Vaib Player.</h1>
-    <video src="videos/gone.mp4" id="video" class="screen" poster="img/poster.png"></video>
-    <div class="controls">
-        <button id="play"><i class="fa fa-play fa-2x"></i></button>
-        <button id="stop"><i class="fa fa-stop fa-2x"></i></button>
+    <video src="videos/gone.mp4" id="video" class="screen" poster="https://img.icons8.com/material-outlined/256/ffffff/play.png"></video>
+    <div class="control">
+    <div class="controls" style="border-bottom-left-radius: 10px;">
+        <button id="play"><img src="https://img.icons8.com/material-outlined/24/04cc1b/play.png"/></button>
+        <button id="stop"><img src="https://img.icons8.com/material-outlined/24/ff0f23/stop.png"/></button>
         <input type="range" class="progress" id="progress" min="0" max="100" step="0.1" value="0">
         <span id="timestamp">00:00</span>
+    </div>
+    <div class="controls" style="border-bottom-right-radius: 10px;">
         <span id="vol">Vol.</span>
-        <input type="range" class="volume" id="volume" min="0" max="100" step="0.1" value="100" style="width: 15%;">
+        <input type="range" class="volume" id="volume" min="0" max="100" step="0.1" value="100">
         <select id="speed">
+            <option value="0.25">0.25x</option>
             <option value="0.5">0.5x</option>
             <option value="1" selected>1x</option>
+            <option value="1.25">1.25x</option>
             <option value="1.5">1.5x</option>
+            <option value="1.75">1.75x</option>
             <option value="2">2x</option>
         </select>
+        <button id="pip">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/picture-in-picture.png"/>
+        </button>
+        <button id="fullscreen">
+            <img src="https://img.icons8.com/material-outlined/24/ffffff/full-screen.png"/>
+        </button>
+    </div>
+    </div>
     </div>
     <script src="script.js"></script>
 </body>
