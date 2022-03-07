@@ -7,6 +7,9 @@ const vol = document.querySelector("#volume");
 const speed = document.querySelector("#speed");
 const fullscreen = document.querySelector("#fullscreen");
 const pip = document.querySelector('#pip');
+const button = document.querySelector('#btn');
+const url = document.querySelector('#url');
+const message = document.querySelector('.mess');
 // Functions
 
 // Play/Pause Video
@@ -68,6 +71,17 @@ function togglePictureInPicture() {
   video.requestPictureInPicture();
 }
 
+function playCustomVideo(){
+  if(url.value===""){
+    video.setAttribute('src',url.getAttribute('placeholder'));
+  } else{
+    video.setAttribute('src',url.value);
+  }
+  message.classList = "mess";
+  setTimeout(() => {
+    message.classList = "mess hidden";    
+  }, 3000);
+}
 
 // Event Listeners
 video.addEventListener("click", toggleVideoStatus);
@@ -106,3 +120,5 @@ pip.addEventListener("click", async () => {
     // Video failed to enter/leave Picture-in-Picture mode.
   }
 });
+
+button.addEventListener('click', playCustomVideo);

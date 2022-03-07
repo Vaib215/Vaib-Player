@@ -55,7 +55,7 @@ h1 {
   cursor: pointer;
 }
 
-.controls .fa-pause, #fullscreen{
+#fullscreen{
   color: white;
   margin-right: 2.25px;
 }
@@ -63,7 +63,7 @@ h1 {
 .controls #timestamp {
   color: white;
   margin-left: 10px;
-  width: 4em;
+  width: 6em;
 }
 
 .controls select {
@@ -81,6 +81,21 @@ h1 {
 
 #volume {
   width: 30%;
+}
+
+.custom{
+  margin-top: 0.25em;
+  margin-bottom: 0.5em;
+  width: 60%;
+}
+
+.custom label, .mess {
+  color:white;
+  padding-right: 4px;
+}
+
+.hidden{
+  visibility: hidden;
 }
 
 @media (max-width: 800px) {

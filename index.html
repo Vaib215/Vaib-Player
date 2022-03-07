@@ -12,7 +12,7 @@
 
 <body>
     <h1>Play your favourite video online using Vaib Player.</h1>
-    <video src="videos/gone.mp4" id="video" class="screen" poster="https://img.icons8.com/material-outlined/256/ffffff/play.png"></video>
+    <video src="videos/gone.mp4" id="video" class="screen"></video>
     <div class="control">
     <div class="controls" style="border-bottom-left-radius: 10px;">
         <button id="play"><img src="https://img.icons8.com/material-outlined/24/04cc1b/play.png"/></button>
@@ -40,6 +40,11 @@
         </button>
     </div>
     </div>
+    <div class="custom urls">
+        <label>Paste your video URL :</label>
+        <input id="url" type="text" placeholder="/videos/gone.mp4">
+        <button id="btn">Add Url</button>
+        <span class="hidden mess">Url Added. Click on play button.</span>
     </div>
     <script src="script.js"></script>
 </body>
